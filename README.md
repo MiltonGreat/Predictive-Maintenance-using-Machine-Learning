@@ -1,4 +1,4 @@
-# Predictive-Maintenance-using-Machine-Learning
+# Predictive Maintenance using Machine Learning
 
 ### Project Overview
 
