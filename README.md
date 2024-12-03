@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-This project focuses on predictive maintenance using machine learning to forecast machinery failures based on historical sensor data. By predicting failures, manufacturers can implement proactive maintenance, reduce downtime, and optimize operational efficiency. 
+This project focuses on predictive maintenance using machine learning to forecast machinery failures based on historical sensor data. By predicting failures, manufacturers can implement proactive maintenance, reduce downtime, and optimize operational efficiency. The Random Forest model you implemented for the predictive maintenance project is a key tool to forecast machinery failures and identify their causes.
 
 The project involves two tasks:
 
