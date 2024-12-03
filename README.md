@@ -50,13 +50,11 @@ Multi-Class Classification:
 
 ### Key Results
 
-Binary Classification:
-- Achieved high accuracy and ROC-AUC after hyperparameter tuning.
-- SMOTE successfully balanced the training data, improving minority class predictions.
-
-Multi-Class Classification:
-- Model performed well on specific failure types, with precision and recall improving through class weighting.
-- Confusion matrix highlighted areas for further improvement.
+- Accuracy: 97.9% ± 0.28% indicates consistent and reliable model predictions across training subsets.
+- ROC-AUC (0.9984 ± 0.0002): Near-perfect area under the ROC curve shows that the model is excellent at distinguishing between failures and non-failures.
+- High precision (99%) and recall (97%) mean the model correctly identifies non-failures with minimal false positives and false negatives.
+- Lower precision (45%) and recall (75%) indicate that while the model identifies many failures, it also produces false positives and misses some failures.
+- High ROC-AUC (0.969) score on the test set confirms that the model is adept at distinguishing failures from non-failures.
 
 ### Future Work
 
