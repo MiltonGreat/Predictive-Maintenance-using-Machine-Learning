@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project focuses on predictive maintenance to forecast machinery failures in manufacturing operations. By leveraging machine learning techniques, the goal is to predict machinery failures, identify potential issues early, and enable proactive maintenance. This will help manufacturers minimize downtime, reduce maintenance costs, and optimize the overall efficiency of operations.
+This project focuses on predictive maintenance to forecast machinery failures in manufacturing operations. The goal is to use machine learning techniques to predict potential failures, identify issues early, and enable proactive maintenance. By minimizing downtime, reducing maintenance costs, and optimizing operational efficiency, manufacturers can improve overall performance.
 
-The project uses sensor data from machines to predict when maintenance is required. The Random Forest model implemented here serves as a key tool for forecasting machine failures and understanding the causes behind them.
+The project leverages sensor data from machines and employs a Random Forest model to predict machinery failures. It also explores imbalanced class handling and feature importance to better understand failure causes and enhance predictive accuracy.
 
 ### Problem Statement
 
@@ -78,25 +78,23 @@ Multi-Class Classification Model Evaluation:
 
 1. Model Performance:
 
-The binary classification model performed excellently with high accuracy and ROC-AUC, making it very effective at distinguishing between failures and non-failures. However, the multi-class classification showed some false positives and missed a few failures, indicating areas for improvement.
+The binary classification model performed excellently with high accuracy and ROC-AUC, effectively distinguishing between failures and non-failures. However, the multi-class model showed challenges with certain classes, especially those representing less frequent failure types (classes 4 and 5), where precision, recall, and F1-scores were very low.
 
 2. Class Imbalance:
 
-Using SMOTE for balancing the class distribution helped the model better learn the minority class and improved recall.
+SMOTE successfully balanced the class distribution, improving the model's ability to learn from the minority class and improving recall, particularly for predicting machinery failures.
 
 3. Feature Importance:
 
-Features like rotational speed, torque, and tool wear were identified as critical indicators of machinery failure, helping prioritize monitoring these factors for early detection.
+Features such as rotational speed, torque, and tool wear were identified as critical indicators of machinery failure. These features should be prioritized for monitoring to enable early detection of failures. However, temperature and tool wear exhibited minimal impact in the model, suggesting that further feature engineering or additional data may be needed for better predictive power.
 
-### Future Directions
+### Future Work
 
-1. Deep Learning Models: Explore neural networks for improved failure prediction accuracy, especially for more complex patterns in the sensor data.
+1. Class Imbalance Handling: Consider additional techniques such as SMOTE or class weighting to improve model performance for underrepresented failure classes.
 
-2. Time Series Modeling: Incorporate temporal dependencies in the sensor data to capture trends and improve predictive maintenance accuracy.
+2. Model Optimization: Investigate ensemble learning techniques or other machine learning models to improve performance, especially in multi-class classification.
 
-3. Real-Time Monitoring: Develop a real-time monitoring system that uses the model's predictions to trigger maintenance alerts and optimize resource allocation.
-
-4. Failure Severity Prediction: Extend the model to predict not only whether a failure will occur but also its severity, enabling more precise maintenance scheduling.        
+3. Feature Engineering: Additional domain-specific features or more granular data could enhance prediction accuracy for specific failure types.       
 
 ### Source
 
