@@ -36,14 +36,14 @@ The dataset used in this project includes historical sensor data for machinery, 
 
 We applied a governance-first framework to ensure the predictive model is robust, fair, and actionable.
 
-1. The Pre-Production Audit: Stress-Testing the Model
+1. **The Pre-Production Audit: Stress-Testing the Model**
 
 Before any model could be considered for deployment, it underwent a rigorous audit simulating factory floor conditions.
 - Robustness Testing: We validated that the model's performance holds across different operational regimes. How does it perform under extreme process temperatures? Does it maintain accuracy at the upper limits of rotational speed?
 - Fairness & Representativeness Audit: We critically evaluated performance across all Machine Types (L, M, H). A model that only predicts failures accurately for 'High'-type machines is an operational liability for lines using 'Low' or 'Medium' types. This was a core focus of our multi-class analysis.
 - Drift Monitoring Baseline: We established a baseline for key feature distributions (e.g., normal ranges for Torque, Tool Wear) to enable future monitoring for data drift caused by new materials, seasonal changes, or wear-and-tear.
 
-2. The Multi-Disciplinary Maintenance Team
+2. **The Multi-Disciplinary Maintenance Team**
 
 Building a trustworthy system requires more than a data scientist.
 
